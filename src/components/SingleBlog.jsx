@@ -17,7 +17,7 @@ const SingleBlog = ({ item }) => {
       </div>
       <div>
 
-        <div className='flex gap-[31.55rem] mt-6 '>
+        <div className='flex justify-between mt-6 '>
 
           <div className=' flex font-sans jus'>
             <img src={item.author_img} alt="" className='h-14 w-14 border rounded-[3.75rem] mr-9 ' />

@@ -6,7 +6,7 @@ import BookMark from "./components/BookMark";
 const App = () => {
 
   return (
-    <div className=" container max-w-[75rem] mx-2 md:mx-auto mt-3">
+    <div className=" container max-w-[73.6rem] mx-2 md:mx-auto mt-3">
       <Nav />
       <div className="flex justify-between">
         <Blogs />
