@@ -8,9 +8,9 @@ const BookProvider = ({ children }) => {
     const [bookmark, setBookmark] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:4000/products')
+        fetch('data.json')
             .then((res) => res.json())
-            .then((res) => setBlogs(res))
+            .then((res) => setBlogs(res.products))
             .catch((error) => console.error('Error fetching data:', error));
     }, []);
 
@@ -24,12 +24,18 @@ const BookProvider = ({ children }) => {
         setBookmark(bookmark.filter(item => item.id !== id));
     };
 
+    const reset=()=>{
+        setTime(0);
+        setBookmark([]);
+    }
+
     const obj = {
         blogs,
         bookmark,
         addBookmark,
         removeBookmark,
-        time
+        time,
+        reset
     };
 
     console.log(bookmark)
