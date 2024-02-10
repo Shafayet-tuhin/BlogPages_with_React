@@ -29,7 +29,7 @@ const SingleBlog = ({ item }) => {
 
           <div className=' flex gap-1 items-center'>
             <p className='text-xl font-medium text-gray-600'>{item.reading_time} min read</p>
-            <button onClick={()=>addBookmark(item.id , item.reading_time)} > <img src={images.bookmark} alt="" className='w-6 h-6' /></button>   
+            <button onClick={()=>addBookmark(item.id , item.reading_time)} > <img src={images.bookmark} alt="" className='w-6 h-6 ' /></button>   
           </div>
         </div>
       </div>

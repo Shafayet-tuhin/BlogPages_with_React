@@ -9,11 +9,11 @@ const BookMark = () => {
     <div className='mt-8 ml-6'>
 
       <div className='flex flex-col gap-4 '>
-        <p className='text-blue-500 font-bold text-2xl px-[3.12rem] py-5 bg-blue-100 border rounded-2xl'>Spent time on read : {time} min</p>
+        <p className='text-[#6047EC] font-bold text-2xl px-[3.12rem] py-5 bg-blue-100 border rounded-2xl border-[#6047EC]'>Spent time on read : {time} min</p>
         <button onClick={()=>reset()}
          className='font-medium text-2xl text-gray-700 px-4 py-3  bg-red-200 border rounded-2xl hover:bg-red-400 hover:text-white'>Clear Reading Time</button>
       </div>
-<div className='p-6  bg-pink-50 mt-6'>
+<div className='p-6  bg-gray-100 mt-6 border rounded-3xl'>
   
 <div className='flex flex-col gap-4'>
 
